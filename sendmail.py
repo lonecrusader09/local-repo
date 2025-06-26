@@ -38,9 +38,9 @@ def job():
     send_mail()
     print("Job done")
 
-schedule.every().day.at("06:00").do(send_mail)
+schedule.every().day.at("10:00").do(send_mail)
 
-print("Schedule started sending emails everyday at 6 am ")
+print("Schedule started sending emails everyday at 10 am ")
 
 while True:
     schedule.run_pending()
